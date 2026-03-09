@@ -12,6 +12,19 @@ public class Filme {
         this.valor = valor;
     }
 
-    public String getNome() { return nome; }
-    public double getValor() { return valor; }
+    public String getNome() {
+        return nome;
+    }
+
+    public int getDuracao() {
+        return duracao;
+    }
+
+    public String getSinopse() {
+        return sinopse;
+    }
+
+    public double getValor() {
+        return valor;
+    }
 }

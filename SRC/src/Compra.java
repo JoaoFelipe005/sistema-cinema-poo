@@ -13,6 +13,7 @@ public class Compra {
     }
 
     public double calcularTotal() {
+
         double total = 0;
 
         for (Bilhete b : bilhetes) {
