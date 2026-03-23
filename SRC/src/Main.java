@@ -1,48 +1,19 @@
 public class Main {
-
     public static void main(String[] args) {
 
-        Usuario usuario = new Usuario(
-                "Joao",
-                "123456789",
-                20,
-                "joao@email.com"
-        );
+        Usuario a1 = new Usuario("joao", "123", "senha", 20, "M", "email",
+                "Joao", "1111", "123");
 
-        Filme filme = new Filme(
-                "Homem Aranha",
-                120,
-                "Filme de ação",
-                20.0
-        );
+        Filme f1 = new Filme("Batman", 120, "Filme", 20.0);
 
-        Sessao sessao = new Sessao(filme, "18:00 - 20:00");
+        Sessao s1 = new Sessao(f1, 1); 
+        s1.reservarCadeira(2, 5);
 
-        Sala sala = new Sala(5);
-        sala.adicionarSessao(0, sessao);
+        Bilhete b1 = new Bilhete(a1, s1, 2, 5);
 
-        sessao.ocuparCadeira(2,3);
+        Compra c1 = new Compra();
+        c1.adicionarBilhete(b1);
 
-        Bilhete bilhete = new Bilhete(
-                usuario,
-                sala,
-                sessao,
-                filme,
-                2,
-                3,
-                filme.getValor()
-        );
-
-        Compra compra = new Compra();
-        compra.adicionarBilhete(bilhete);
-
-System.out.println("      INGRESSO     ");
-System.out.println("Usuario: " + usuario.getNome());
-System.out.println("Filme: " + filme.getNome());
-System.out.println("Horario: " + bilhete.getSessao().getHorario());
-System.out.println("Sala: 1");
-System.out.println("Cadeira: Linha " + bilhete.getLinha() +
-                   " Coluna " + bilhete.getColuna());
-System.out.println("Valor: R$ " + compra.calcularTotal());
+        c1.mostrarCompra();
     }
 }
