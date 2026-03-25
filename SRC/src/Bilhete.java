@@ -13,10 +13,19 @@ public class Bilhete {
         this.valor = sessao.getFilme().getValor();
     }
 
-    public Usuario getUsuario() { return usuario; }
-    public Sessao getSessao() { return sessao; }
-    public double getValor() { return valor; }
+    public Usuario getUsuario() { 
+        return usuario; }
+    public Sessao getSessao() { 
+        return sessao; 
+    }
+    public double getValor() { 
+        return valor; 
+    }
 
-    public int getLinha() { return linha; }
-    public int getColuna() { return coluna; }
+    public int getLinha() { 
+        return linha; 
+    }
+    public int getColuna() { 
+        return coluna; 
+    }
 }

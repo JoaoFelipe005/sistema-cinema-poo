@@ -11,6 +11,10 @@ public class Filme {
         this.valor = valor;
     }
 
-    public String getNome() { return nome; }
-    public double getValor() { return valor; }
+    public String getNome() { 
+        return nome; 
+    }
+    public double getValor() { 
+        return valor; 
+    }
 }
