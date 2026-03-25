@@ -10,7 +10,7 @@ public class Bilhete {
         this.sessao = sessao;
         this.linha = linha;
         this.coluna = coluna;
-        this.valor = sessao.getFilme().getValor();
+        this.valor = sessao.getFilme().getValor(); 
     }
 
     public Usuario getUsuario() { 

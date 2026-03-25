@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 
 public class Compra {
-    private ArrayList<Bilhete> bilhetes = new ArrayList<>();
+    private ArrayList<Bilhete> bilhetes = new ArrayList<>(); 
 
     public void adicionarBilhete(Bilhete b) {
         bilhetes.add(b);
+
     }
 
     public void mostrarCompra() {
@@ -30,7 +31,7 @@ public class Compra {
         return total;
     }
 
-    public double calcularTotal(CupomPromocional cupom) {
+    public double calcularTotal(CupomPromocional cupom) { // sobrecarga
         double total = calcularTotal();
         return total - (total * cupom.getDesconto());
     }

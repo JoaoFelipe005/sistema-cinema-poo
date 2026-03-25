@@ -6,7 +6,7 @@ public class Sala {
     }
 
     public void adicionarSessao(int index, Sessao sessao) {
-        sessoes[index] = sessao;
+        sessoes[index] = sessao; 
     }
 
     public Sessao getSessao(int index) {

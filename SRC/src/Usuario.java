@@ -22,6 +22,10 @@ public class Usuario {
         this.codigoCartao = codigoCartao;
     }
 
-    public String getUser() { return user; }
-    public String getCpf() { return cpf; }
+    public String getUser() { 
+        return user; 
+    }
+    public String getCpf() {
+         return cpf; 
+    }
 }
