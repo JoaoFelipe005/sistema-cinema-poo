@@ -28,4 +28,7 @@ public class Usuario {
     public String getCpf() {
          return cpf; 
     }
+    public double calcularValor(double valor) {
+        return valor;
+    }
 }
