@@ -1,6 +1,6 @@
 public class Sessao {
     private Filme filme;
-    private boolean[][] cadeiras = new boolean[10][15]; // perguntar ao gpt
+    private boolean[][] cadeiras = new boolean[10][15]; 
     private int numeroSala; 
     private TipoSala tipoSala;
 
