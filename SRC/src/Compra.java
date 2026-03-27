@@ -3,12 +3,13 @@ import java.util.ArrayList;
 public class Compra {
     private ArrayList<Bilhete> bilhetes = new ArrayList<>();
     private ArrayList<Produto> produtos = new ArrayList<>();
-
-    public void adicionarBilhete(Bilhete b) {
+//usamos uma lista dinamica para armazenar varios itens
+    
+public void adicionarBilhete(Bilhete b) { // adiciona um bilhete a lista
         bilhetes.add(b);
     }
 
-    public void adicionarProduto(Produto p) {
+    public void adicionarProduto(Produto p) { // adiciona um produto
         produtos.add(p);
     }
 

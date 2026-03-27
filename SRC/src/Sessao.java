@@ -1,6 +1,6 @@
 public class Sessao {
     private Filme filme;
-    private boolean[][] cadeiras = new boolean[10][15]; // perguntar ao gpt
+    private boolean[][] cadeiras = new boolean[10][15]; // usamos booleano porque so pode asssumir dois valores
     private int numeroSala; 
     private TipoSala tipoSala;
 
@@ -11,7 +11,7 @@ public class Sessao {
     }
 
     public boolean reservarCadeira(int linha, int coluna) {
-        if (!cadeiras[linha][coluna]) {
+        if (!cadeiras[linha][coluna]) { // o true se transforma e false
             cadeiras[linha][coluna] = true;
             return true;
         }

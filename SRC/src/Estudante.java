@@ -5,7 +5,7 @@ public class Estudante extends Usuario {
         super(user, cpf, senha, idade, sexo, email, nomeCartao, numeroCartao, codigoCartao);
     }
 
-    public double calcularValor(double valor) {
+    public double calcularValor(double valor) { //sobrescrita
         return valor / 2; 
     }
 }
