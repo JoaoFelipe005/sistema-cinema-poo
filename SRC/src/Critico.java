@@ -8,7 +8,7 @@ public class Critico extends Usuario {
         this.origem = origem;
     }
 
-    public double calcularValor(double valor) { // sobrescrita
+    public double calcularValor(double valor) { 
         return 0; 
     }
 }
