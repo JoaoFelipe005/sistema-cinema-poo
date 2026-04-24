@@ -13,4 +13,4 @@ git clone https://github.com/JoaoFelipe005/sistema-cinema-poo.git
 cd sistema-cinema-poo
 3️ - Compilar os arquivos Java
 4️ - Executar o programa
-java Main
+java Main.
