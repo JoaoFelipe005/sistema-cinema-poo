@@ -8,7 +8,27 @@ public class Critico extends Usuario {
         this.origem = origem;
     }
 
-    public double calcularValor(double valor) { 
-        return 0; 
+    // crítico não paga ingresso
+    public double calcularValor(double valor) {
+        return 0;
+    }
+
+    public String getOrigem() {
+        return origem;
+    }
+
+    // atribui nota de 0 a 10 ao filme
+    public void atribuirNota(double nota, Filme filme) {
+        if (nota >= 0 && nota <= 10) {
+            filme.adicionarNota(nota);
+        } else {
+            System.out.println("Nota inválida.");
+        }
+    }
+
+    // adiciona crítica ao filme
+    public void atribuirCritica(String mensagem, Filme filme) {
+        Critica critica = new Critica(getUser(), origem, mensagem);
+        filme.adicionarCritica(critica);
     }
 }
