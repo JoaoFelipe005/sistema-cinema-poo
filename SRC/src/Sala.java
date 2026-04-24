@@ -1,4 +1,4 @@
-public class Sala {
+public class Sala { // alterar
     private Sessao[] sessoes; // array vetor que guarda varios objetos da sessao
 
     public Sala(int tamanho) {
