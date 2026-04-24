@@ -32,7 +32,7 @@ public class Main {
 
         double total = c.calcularTotal();
 
-        double totalComDesconto = c.calcularTotal(CupomPromocional.DESCONTO30);
+        double totalComDesconto = c.calcularTotal(CupomPromocional.DESCONTO10);
 
         c.mostrarCompra();
 

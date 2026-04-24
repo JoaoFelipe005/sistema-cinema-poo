@@ -9,8 +9,8 @@ public class Usuario {
     private String numeroCartao;
     private String codigoCartao;
 
-    public Usuario(String user, String cpf, String senha, int idade, String sexo, String email,
-                   String nomeCartao, String numeroCartao, String codigoCartao) {
+    public Usuario(String user, String cpf, String senha, int idade, String sexo, String email, 
+        String nomeCartao, String numeroCartao, String codigoCartao) {
         this.user = user;
         this.cpf = cpf;
         this.senha = senha;

@@ -3,7 +3,7 @@ public class Bilhete {
     private Sessao sessao;
     private double valor;
     private int linha;
-    private int coluna;
+    private int coluna; // atributos
 
    public Bilhete(Usuario usuario, Sessao sessao, int linha, int coluna) {
     this.usuario = usuario;
@@ -11,7 +11,7 @@ public class Bilhete {
     this.linha = linha;
     this.coluna = coluna;
     double valorBase = sessao.getFilme().getValor();
-    this.valor = usuario.calcularValor(valorBase); 
+    this.valor = usuario.calcularValor(valorBase);  // usamos para buscar o preço do filme e aplicar o desconto do tipo do usuario
 }
     public Usuario getUsuario() { 
         return usuario; }

@@ -11,7 +11,7 @@ public class Sessao {
     }
 
     public boolean reservarCadeira(int linha, int coluna) {
-        if (!cadeiras[linha][coluna]) {
+        if (!cadeiras[linha][coluna]) { 
             cadeiras[linha][coluna] = true;
             return true;
         }
