@@ -8,7 +8,7 @@ public class Critico extends Usuario {
         this.origem = origem;
     }
 
-    // crítico não paga ingresso
+    // critico não paga ingresso
     public double calcularValor(double valor) {
         return 0;
     }
