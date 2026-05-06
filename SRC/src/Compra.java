@@ -28,6 +28,7 @@ public class Compra {
             System.out.println("Filme: " + b.getSessao().getFilme().getNome());
             System.out.println("Sala: " + b.getSessao().getNumeroSala());
             System.out.println("Tipo de sala: " + b.getSessao().getTipoSala());
+            System.out.println("Horário: " + b.getSessao().getHorario());
             System.out.println("Cadeira: Linha " + b.getLinha() + " Coluna " + b.getColuna());
             System.out.println("Valor: R$ " + b.getValor());
             System.out.println("----------------------");

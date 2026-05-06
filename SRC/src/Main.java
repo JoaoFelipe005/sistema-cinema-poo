@@ -13,8 +13,8 @@ public class Main {
         Filme f = new Filme("Batman", 20.0, 120, "Filme do Batman");
         Filme f2 = new Filme("Orgulho e Preconceito", 20.0, 130, "Romance clássico");
 
-        Sessao s = new Sessao(f, 1, TipoSala.TRES_D);
-        Sessao s2 = new Sessao(f2, 2, TipoSala.COMUM);
+        Sessao s = new Sessao(f, 1, TipoSala.TRES_D, "18:00 - 20:00");
+        Sessao s2 = new Sessao(f2, 2, TipoSala.COMUM, "20:00 - 22:00");
 
         Bilhete b1 = new Bilhete(u, s, 2, 5);
         Bilhete b2 = new Bilhete(e, s, 2, 6);
