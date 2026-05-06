@@ -12,4 +12,19 @@ public class Sala { // alterar
     public Sessao getSessao(int index) {
         return sessoes[index];
     }
+
+    public void mostrarSessoes() { // Mostrar sessões
+        System.out.println("=== SESSÕES DISPONÍVEIS ===");
+
+        for (int i = 0; i < sessoes.length; i++) {
+            if (sessoes[i] != null) {
+                System.out.println("Sala: " + sessoes[i].getNumeroSala());
+                System.out.println("Filme: " + sessoes[i].getFilme().getNome());
+                System.out.println("Tipo: " + sessoes[i].getTipoSala());
+                System.out.println("Horário: " + sessoes[i].getHorario());
+                System.out.println("----------------------");
+            }
+        }
+    }
+}
 }
