@@ -16,6 +16,14 @@ public class Main {
         Sessao s = new Sessao(f, 1, TipoSala.TRES_D, "18:00 - 20:00");
         Sessao s2 = new Sessao(f2, 2, TipoSala.COMUM, "20:00 - 22:00");
 
+        // Usando sala
+        Sala sala = new Sala(5);
+        sala.adicionarSessao(0, s);
+        sala.adicionarSessao(1, s2);
+
+        // Mostrar Sessoes
+        sala.mostrarSessoes();
+
         Bilhete b1 = new Bilhete(u, s, 2, 5);
         Bilhete b2 = new Bilhete(e, s, 2, 6);
         Bilhete b3 = new Bilhete(critico, s2, 3, 4);
@@ -29,35 +37,29 @@ public class Main {
         c.adicionarProduto(Produto.PIPOCA);
         c.adicionarProduto(Produto.REFRIGERANTE);
 
-        // CRÍTICAS ORGANIZADAS
-        
-        // Críticas para o filme Batman
+        // críticas
         critico.atribuirNota(10, f);
         critico.atribuirCritica("Filme muito bom.", f);
 
         critico.atribuirNota(8, f);
         critico.atribuirCritica("Ótima atuação do protagonista.", f);
 
-        // Críticas para o outro filme
         critico.atribuirNota(7, f2);
         critico.atribuirCritica("Bom, mas um pouco lento.", f2);
 
-
-        // EXIBIÇÃO
+        // exibição
         c.mostrarCompra();
 
         System.out.println("\n===== FILME 1 =====");
         System.out.println("Nome: " + f.getNome());
         System.out.println("Nota média: " + f.getNota());
         System.out.println("Quantidade de críticos: " + f.getQuantidadeCriticos());
-        System.out.println("Críticas:");
         f.mostrarCriticas();
 
         System.out.println("\n===== FILME 2 =====");
         System.out.println("Nome: " + f2.getNome());
         System.out.println("Nota média: " + f2.getNota());
         System.out.println("Quantidade de críticos: " + f2.getQuantidadeCriticos());
-        System.out.println("Críticas:");
         f2.mostrarCriticas();
 
         System.out.println("\nTotal normal: R$ " + c.calcularTotal());
