@@ -10,8 +10,11 @@ public class Bilhete {
     this.sessao = sessao;
     this.linha = linha;
     this.coluna = coluna;
-    double valorBase = sessao.getFilme().getValor();
-    this.valor = usuario.calcularValor(valorBase);  // usamos para buscar o preço do filme e aplicar o desconto do tipo do usuario
+    
+    double valorBase = sessao.getFilme().getValor(); // adicionamos o multiplicador de sala
+    double multiplicador = sessao.getTipoSala().getMultiplicador();
+    double valorFinal = valorBase * multiplicador;
+    this.valor = usuario.calcularValor(valorFinal);
 }
     public Usuario getUsuario() { 
         return usuario; }
