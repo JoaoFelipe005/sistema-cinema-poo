@@ -58,7 +58,7 @@ public class Filme {
     // mostrar críticas
     public void mostrarCriticas() {
         for (int i = 0; i < qtdCriticas; i++) {
-            System.out.println(criticas[i].getMensagem());
-        }
+            System.out.println(criticas[i].getNome() + " (" + criticas[i].getOrigem() + "): " + criticas[i].getMensagem());;
+    }
     }
 }
