@@ -25,4 +25,18 @@ public class Funcionario extends Base implements GerenciaFilmes {
         System.out.println("Usuário alterado pelo funcionário.");
     }
 
+    @Override
+    public void incluirFilme(Filme filme) { // // metodo da interface
+        System.out.println("Filme incluído.");
     }
+
+    @Override
+    public void excluirFilme(Filme filme) {
+        System.out.println("Filme excluído.");
+    }
+
+    @Override
+    public void alterarFilme(Filme filme) {
+        System.out.println("Filme alterado.");
+    }
+}
