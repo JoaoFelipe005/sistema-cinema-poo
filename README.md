@@ -14,3 +14,11 @@ cd sistema-cinema-poo
 3️ - Compilar os arquivos Java
 4️ - Executar o programa
 java Main.
+
+## Integrantes do Grupo
+
+| Nome | Usuário GitHub |
+|------|---------------|
+| Jose Bezerra | josesandesneto-cyber |
+| João Felipe | JoaoFelipe005 |
+| Luiz Rogério | dev-rogerinho |
