@@ -3,20 +3,20 @@ public class Filme {
     private double valor;
     private int duracao;
     private String sinopse;
-
     private double nota;
     private int quantidadeCriticos;
-
     private Critica[] criticas = new Critica[100];
     private int qtdCriticas = 0;
+    private boolean emCartaz;
 
-    public Filme(String nome, double valor, int duracao, String sinopse) {
+    public Filme(String nome, double valor, int duracao, String sinopse, boolean emCartaz) {
         this.nome = nome;
         this.valor = valor;
         this.duracao = duracao;
         this.sinopse = sinopse;
         this.nota = 0;
         this.quantidadeCriticos = 0;
+        this.emCartaz = emCartaz;
     }
 
     public String getNome() {
@@ -42,6 +42,10 @@ public class Filme {
     public int getQuantidadeCriticos() {
         return quantidadeCriticos;
     }
+
+    public boolean isEmCartaz() {
+    return emCartaz;
+}
 
     // adicionar nota e recalcula a média
     public void adicionarNota(double novaNota) {
