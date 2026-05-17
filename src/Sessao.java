@@ -4,12 +4,14 @@ public class Sessao {
     private int numeroSala; 
     private TipoSala tipoSala;
     private String horario;
+    private boolean sessaoEncerrada;
 
-    public Sessao(Filme filme, int numeroSala, TipoSala tipoSala, String horario) {
+    public Sessao(Filme filme, int numeroSala, TipoSala tipoSala, String horario, boolean sessaoEncerrada) {
     this.filme = filme;
     this.numeroSala = numeroSala;
     this.tipoSala = tipoSala;
     this.horario = horario;
+    this.sessaoEncerrada = sessaoEncerrada;
 }
 
     public boolean reservarCadeira(int linha, int coluna) {
@@ -21,11 +23,10 @@ public class Sessao {
 
         return true;
     }
-
     throw new IllegalArgumentException(
             "Poltrona já selecionada.");
-}
     }
+}
 
     public Filme getFilme() {
         return filme;
@@ -40,5 +41,8 @@ public class Sessao {
 }
     public String getHorario() {
     return horario;
+}
+public boolean isSessaoEncerrada() {
+    return sessaoEncerrada;
 }
 }
