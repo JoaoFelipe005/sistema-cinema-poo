@@ -5,7 +5,10 @@ public class Bilhete {
     private int linha;
     private int coluna; // atributos
 
-   public Bilhete(Usuario usuario, Sessao sessao, int linha, int coluna) {
+   public Bilhete(Usuario usuario, Sessao sessao, int linha, int coluna) { // excessao
+    if (!sessao.getFilme().isEmCartaz()) {
+    throw new IllegalArgumentException("Filme fora de cartaz.");
+    }
     this.usuario = usuario;
     this.sessao = sessao;
     this.linha = linha;
