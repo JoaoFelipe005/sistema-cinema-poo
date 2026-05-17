@@ -14,18 +14,18 @@ public class Sessao {
     this.sessaoEncerrada = sessaoEncerrada;
 }
 
-    public boolean reservarCadeira(int linha, int coluna) {
-        public boolean reservarCadeira(int linha, int coluna) {
+    public boolean reservarCadeira(int linha, int coluna)
+        throws VendasException {
 
     if (!cadeiras[linha][coluna]) {
 
         cadeiras[linha][coluna] = true;
-
+        
         return true;
     }
-    throw new IllegalArgumentException(
+
+    throw new VendasException(
             "Poltrona já selecionada.");
-    }
 }
 
     public Filme getFilme() {

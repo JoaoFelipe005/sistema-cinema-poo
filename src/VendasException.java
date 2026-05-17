@@ -1,3 +1,7 @@
-public class VendasException {
-    
+public class VendasException extends Exception {
+
+    public VendasException(String mensagem) {
+
+        super(mensagem);
+    }
 }
