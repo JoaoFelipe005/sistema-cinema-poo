@@ -8,31 +8,35 @@ public class Bilhete {
    public Bilhete(Usuario usuario,
                Sessao sessao,
                int linha,
-               int coluna) {
+               int coluna)
+               throws VendasException {
 
     // filme fora de cartaz
     if (!sessao.getFilme().isEmCartaz()) {
 
-        throw new IllegalArgumentException(
+        throw new VendasException(
                 "Filme fora de cartaz.");
     }
 
     // sessão encerrada
     if (sessao.isSessaoEncerrada()) {
 
-        throw new IllegalArgumentException(
+        throw new VendasException(
                 "Sessão já encerrada.");
     }
 
     this.usuario = usuario;
     this.sessao = sessao;
+
     this.linha = linha;
     this.coluna = coluna;
 
-    double valorBase = sessao.getFilme().getValor();
+    double valorBase =
+            sessao.getFilme().getValor();
 
     double multiplicador =
-            sessao.getTipoSala().getMultiplicador();
+            sessao.getTipoSala()
+                    .getMultiplicador();
 
     double valorFinal =
             valorBase * multiplicador;
