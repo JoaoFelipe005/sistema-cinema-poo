@@ -19,10 +19,8 @@ public class Critico extends Usuario {
 
     // atribui nota de 0 a 10 ao filme
     public void atribuirNota(double nota, Filme filme) {
-        if (nota >= 0 && nota <= 10) {
-            filme.adicionarNota(nota);
-        } else {
-            System.out.println("Nota inválida.");
+        if (nota < 0 || nota > 10){
+            
         }
     }
 
