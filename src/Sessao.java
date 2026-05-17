@@ -13,11 +13,18 @@ public class Sessao {
 }
 
     public boolean reservarCadeira(int linha, int coluna) {
-        if (!cadeiras[linha][coluna]) { 
-            cadeiras[linha][coluna] = true;
-            return true;
-        }
-        return false;
+        public boolean reservarCadeira(int linha, int coluna) {
+
+    if (!cadeiras[linha][coluna]) {
+
+        cadeiras[linha][coluna] = true;
+
+        return true;
+    }
+
+    throw new IllegalArgumentException(
+            "Poltrona já selecionada.");
+}
     }
 
     public Filme getFilme() {
