@@ -17,11 +17,12 @@ public class Critico extends Usuario {
         return origem;
     }
 
-    // atribui nota de 0 a 10 ao filme
+    // excessao
     public void atribuirNota(double nota, Filme filme) {
         if (nota < 0 || nota > 10){
-            
+            throw new IllegalArgumentException("Nota inválida.");
         }
+          filme.adicionarNota(nota);
     }
 
     // adiciona crítica ao filme
